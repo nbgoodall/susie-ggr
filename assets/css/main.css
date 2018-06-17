@@ -55,15 +55,23 @@ img.section-image {
   #partners-footer h2 {
     font-weight: 400; }
   #partners-footer .logos {
-    width: 50%;
+    width: 60%;
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap; }
     #partners-footer .logos img {
-      margin-bottom: 20px;
+      margin-bottom: 30px;
       height: 30px;
       object-fit: contain; }
+      #partners-footer .logos img.zhik {
+        height: 50px;
+        margin-top: -10px;
+        margin-bottom: 20px; }
+      #partners-footer .logos img.selden {
+        height: 40px;
+        margin-top: -5px;
+        margin-bottom: 25px; }
 
 #page-header-text h1 {
   font-size: 30px;
@@ -128,6 +136,9 @@ img.section-image {
 
 .m-0 {
   margin: 0; }
+
+.pb-0 {
+  padding-bottom: 0px; }
 
 .uppercase {
   text-transform: uppercase; }
