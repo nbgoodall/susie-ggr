@@ -54,8 +54,9 @@ img.section-image {
   #partners-footer h2 {
     font-weight: 400; }
   #partners-footer .logos {
-    width: 60%;
-    margin: 0 auto;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap; }
@@ -71,9 +72,14 @@ img.section-image {
         height: 40px;
         margin-top: -5px;
         margin-bottom: 25px; }
+      #partners-footer .logos img.invivo {
+        height: 60px;
+        margin-top: -15px;
+        margin-bottom: 15px; }
 
 #page-header-text h1 {
   font-size: 30px;
+  line-height: 35px;
   font-weight: 400; }
 
 @media (min-width: 768px) {
@@ -81,7 +87,8 @@ img.section-image {
     height: 600px; }
 
   #page-header-text h1 {
-    font-size: 60px; } }
+    font-size: 60px;
+    line-height: 70px; } }
 .wave {
   position: relative;
   padding-top: 1px;
@@ -181,6 +188,7 @@ h1.category, h2.category, h3.category, h4.category, h5.category, h6.category, p.
 .button {
   transition: opacity 0.3s;
   display: inline-block;
+  line-height: 17.25px;
   text-align: center;
   text-transform: uppercase;
   font-size: 15px;
@@ -223,6 +231,11 @@ h1.category, h2.category, h3.category, h4.category, h5.category, h6.category, p.
       margin-left: 20px; }
     .two-columns > *:nth-child(1n+3) {
       margin-top: 40px; } }
+.max-650 {
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto; }
+
 .fullwidth-video {
   position: relative;
   padding-bottom: 56.25%;
@@ -324,6 +337,10 @@ h1.category, h2.category, h3.category, h4.category, h5.category, h6.category, p.
 * {
   font-weight: 300; }
 
+body {
+  font-size: 18px;
+  line-height: calc(18px * 1.4); }
+
 h1, h2, h3 {
   margin-top: 0; }
 
@@ -331,8 +348,7 @@ h2 {
   line-height: 30px; }
 
 p {
-  margin-top: 0;
-  line-height: 22px; }
+  margin-top: 0; }
 
 a {
   color: inherit;
@@ -372,7 +388,7 @@ blockquote {
     position: absolute;
     margin: 0;
     left: 0;
-    top: 58px;
+    top: 55px;
     width: 100%;
     background-color: #11191A;
     list-style: none;
@@ -427,6 +443,10 @@ blockquote {
       margin-bottom: 5px; }
   #footer-links h2 {
     color: #F08F00; }
+  #footer-links .social-icons img {
+    max-width: 50px;
+    margin-right: 15px;
+    margin-bottom: 5px; }
 
 .post-header {
   display: flex;
@@ -454,6 +474,10 @@ blockquote {
       margin-right: 15px; }
     .post-content img[align=right] {
       margin-left: 15px; }
+  .post-content p, .post-content ul, .post-content ol {
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto; }
 
 @media (min-width: 768px) {
   .post-header {
@@ -470,6 +494,19 @@ blockquote {
 
   .post-image {
     margin-bottom: 30px; } }
+form input, form textarea {
+  background-color: #f5f6fa;
+  border: none;
+  margin-bottom: 1rem;
+  padding: 10px;
+  font-size: 1rem;
+  font-family: Montserrat, sans-serif;
+  outline: 0;
+  width: 100%; }
+form textarea {
+  resize: vertical;
+  min-height: 120px; }
+
 body {
   font-family: Montserrat; }
 
