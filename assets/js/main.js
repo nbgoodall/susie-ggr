@@ -15,6 +15,8 @@ $(document).ready(function() {
   //   });
   //   feed.run();
 
+  const CAPTION_LIMIT = 200;
+
   // Instagram photo
   var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
   var token = '2105335798.0e4feb4.a4d8e7da0c4f4f978943a661df73f961',
@@ -34,7 +36,7 @@ $(document).ready(function() {
 
         $('#instagram').css('background-image', 'url(' + x.images.standard_resolution.url + ')');
 
-        $('#instagram .content').append(`<p>${ x.caption.text.substring(0, 200) }&hellip;</p>`)
+        $('#instagram .content').append(`<p>${ x.caption.text.substring(0, CAPTION_LIMIT) }&hellip;</p>`)
 
         $('#instagram .social').prepend(`<small class="uppercase mb-15">${ months[date.getMonth()] } ${ date.getDate() }, ${ date.getFullYear() }</small>`)
       },
@@ -59,7 +61,7 @@ $(document).ready(function() {
                 "<div class='social'>" +
                   "<small class='uppercase mb-15'>" + `${ months[date.getMonth()] } ${ date.getDate() }, ${ date.getFullYear() }`  + "</small>" +
                 "</div>" +
-                "<p>" + x.caption.text.substring(0, 200) + "&hellip;</p>" +
+                "<p>" + x.caption.text.substring(0, CAPTION_LIMIT) + "&hellip;</p>" +
               "</div>" +
             "</a>"
           )

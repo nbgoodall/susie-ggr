@@ -290,7 +290,9 @@ h1.category, h2.category, h3.category, h4.category, h5.category, h6.category, p.
         color: #F08F00; }
   .tile.gray, .tile.orange, .tile.twitter, .tile.image, .tile.instagram .content {
     padding: 30px;
-    color: #FFF; }
+    color: #FFF;
+    overflow: hidden;
+    text-overflow: ellipsis; }
   .tile.gray {
     background-color: #11191A; }
   .tile.orange {

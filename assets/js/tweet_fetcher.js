@@ -231,7 +231,8 @@ var urlRegex = new RegExp(
   "gi"
 );
 
-const MAX_LINK_LENGTH = 30
+const MAX_LINK_LENGTH = 30,
+      CAPTION_LIMIT   = 200
 
 function handleTweets(tweets) {
 
@@ -240,7 +241,7 @@ function handleTweets(tweets) {
 
   document.getElementById("twitter").innerHTML += tweet[0].innerText.replace(/(?:(https?\:\/\/[^\s]+))/m, function(link) {
     return "<a href='" + link + "'>" + link.substring(0, MAX_LINK_LENGTH) + "&hellip;</a>"
-  });
+  }).substring(0, CAPTION_LIMIT)
 
   $('#twitter .social').prepend(`<small class="uppercase mb-15">${ tweet[1].innerText.trim() }</small>`)
 }
