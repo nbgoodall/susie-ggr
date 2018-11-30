@@ -341,7 +341,7 @@ h1.category, h2.category, h3.category, h4.category, h5.category, h6.category, p.
 
 body {
   font-size: 18px;
-  line-height: calc(18px * 1.4); }
+  line-height: calc(18px * 1.6); }
 
 h1, h2, h3 {
   margin-top: 0; }
