@@ -20,9 +20,8 @@ img.section-image {
 
 .page-header {
   width: 100%;
-  height: 400px;
+  min-height: 100vh;
   background-size: cover;
-  background-position: 50% 20%;
   display: flex;
   align-items: center;
   justify-content: center; }
@@ -363,19 +362,23 @@ blockquote {
 
 #header {
   height: auto;
-  background-color: #11191A;
+  position: fixed;
+  width: 100%;
   color: #FFF;
   padding: 15px;
   display: flex;
   justify-content: space-between;
-  align-items: flex-end; }
-  #header #brand {
+  align-items: center; }
+  #header position
+  #brand {
     font-size: 25px;
     display: flex;
     align-items: center; }
-    #header #brand #full-name {
+    #header position
+    #brand #full-name {
       display: none; }
-    #header #brand div {
+    #header position
+    #brand div {
       line-height: 25px;
       font-weight: 400; }
   #header #logo {
@@ -386,49 +389,12 @@ blockquote {
     font-size: 25px;
     cursor: pointer; }
   #header #header-menu ul {
-    display: none;
-    position: absolute;
     margin: 0;
-    left: 0;
-    top: 55px;
-    width: 100%;
-    background-color: #11191A;
     list-style: none;
-    padding-left: 0;
-    margin: 0;
-    padding-right: 15px;
-    padding-bottom: 7.5px;
     text-align: right; }
     #header #header-menu ul li {
-      padding-bottom: 7.5px; }
-    #header #header-menu ul li.active {
-      color: #F08F00; }
+      text-transform: uppercase; }
 
-@media (min-width: 768px) {
-  #header {
-    padding: 25px 40px; }
-    #header #brand {
-      align-items: flex-start; }
-      #header #brand #full-name {
-        display: block; }
-      #header #brand #short-name {
-        display: none; }
-    #header #logo {
-      max-height: 50px; }
-    #header #header-menu #hamburger {
-      display: none; }
-    #header #header-menu ul {
-      display: block;
-      position: initial;
-      text-align: left;
-      padding: 0; }
-      #header #header-menu ul li {
-        display: inline-block;
-        text-transform: uppercase;
-        font-weight: 300;
-        padding: 0; }
-        #header #header-menu ul li:not(:first-of-type) {
-          margin-left: 15px; } }
 #footer-links {
   display: flex;
   justify-content: space-around;
@@ -511,6 +477,10 @@ form textarea {
 
 body {
   font-family: Montserrat; }
+
+html, body {
+  height: 100%;
+  min-height: 100%; }
 
 * {
   box-sizing: border-box; }
